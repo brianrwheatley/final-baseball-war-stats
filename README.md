@@ -1,11 +1,6 @@
-# final-baseball-war-stats
-
-README.md must include:
-✓ Outline of the project (this may include images, but should be easy to follow and digest)
-Note: The descriptions and explanations required in all other project deliverables should also be in your README.md as part of your outline, unless otherwise noted.
+# MLB Player Injury Impact on Performance
 
 ## Project Outline
-
 ### Project Overview
 We will be analyzing the injury data of MLB players from 2010 - 2021 and how these injuries impacted the production of players once they returned to the field. For this project, we will only be analyzing the impact of injuries that resulted in a player being placed on the MLB Injured List (formerly known as the Disabled List prior to the 2019 season). We will analyze the production of the players pre and post injury by comparing their WAR statistic. 
 
@@ -28,7 +23,6 @@ As the datasets were being prepared, we created a sample machine learning model 
 
 
 ## Communication Protocols
-
 We used Slack as our main method of communication between group members outside of normal class hours. During class hours, we meet, discuss, and work on our project over Zoom video conferences. Additionally, we have been using a github repository to conglomerate all of our datasets and code. 
 
 Each week, we have established tasks for each group member to carry out for the duration of the week. We have been sharing our updates via Slack, as well as any new or revised datasets. 
