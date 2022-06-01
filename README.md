@@ -1,3 +1,58 @@
+#Predicting Major League Baseball Player Performance
+###Using player WAR information and injury data to anticipate performance growth or contraction
+
+WAR (Wins Above Replacement) is an attempt to summarize a player's total contributions to their team into one statistical number. Using varying mathematical formats, a WAR number asks the question - "If a player was injured at the team needed a replacement, how much value would the team be losing (or gaining)?)" 
+
+A standard WAR hovers around a +2, meaning that with higher number, a team would be losing experience by bringing up a replacement, while anything less that 2 or negative numbers would be a gain in performance for a team.
+
+Though not without contrversy, WAR numbers are fairly reliable to rate a player's individual performace year-to-year. 
+
+##Selecting the Topic
+We selected the topic based on a shared interest in baseball, statistics, and the availability of data. Our team felt that building a predcition model to estimate the total effects an injury may have on a player's WAR number would be benefitial to in both a healthcare sense (does modern healthcare impact recovery time), as well as an information source for fantasy or sports betting.
+
+
+##Looking at the Data
+Our primary sources of data were Baseball-Reference and aggrigated WAR data from FanGraphs and Baseball-Reference, compiled by Neil Paine.
+
+Both sources were chosen by the completeness of data, both in terms of years and players available, as well as accuracy with limited missing data.
+
+Our data sources were fairly consistent between both sources, however we did focus on aligning player information using player name, team, and year. Through the process, we did experience a small loss of data, around 1.5%, however our group determined that was an acceptable loss, since our data included over 18,000 data rows.
+
+Our team limited our data range to 2010, or 14 years. We felt that there was a possiblility of skewed data prior to that time, due to the ongoing steroid scandals of the 1990s and early 2000s. There's also ongoing controversy with WAR numbers favoring players in earlier years due to the variance in skill levels. Injury data before the 1990s is also far from complete.
+
+
+##Questions Overview
+-Can we predict a player's WAR number following an injury?
+-Could we accurately predict a player's recovery time based on injury?
+-Is there a direct corolation between time on the injured list and decrease in WAR?
+-Does WAR ever bounce back to pre-injury levels and how quickly?
+
+
+##Results
+
+
+##Future Analysis Possibilities
+
+
+Content 
+The presentation tells a cohesive story about their project, including the 
+following: 
+✓ Selected topic
+✓ Reason why they selected their topic
+✓ Description of their source of data
+✓ Questions they hope to answer with the data
+✓ Description of the data exploration phase of the project
+✓ Description of the analysis phase of the project
+✓ Technologies, languages, tools, and algorithms used throughout the project 
+✓ Result of analysis
+✓ Recommendation for future analysis
+✓ Anything the team would have done differently 
+
+
+
+
+
+
 # MLB Player Injury Impact on Performance
 
 ## Project Outline
