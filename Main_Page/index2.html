@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Baseball WAR</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+  <div class="jumbotron">
+    <!-- Add Jumbotron to Header -->
+    <div class="jumbotron text-center" style="background-image: url('https://img.mlbstatic.com/mlb-images/image/private/t_16x9/t_w1024/mlb/cfcjvwd0ankchf4sniuo'); 
+    background-position: fit; height: 300px">
+      <h1 style="color:aliceblue; font-family: verdana; -webkit-text-stroke: 2.5px black; font-size: 56px; font-weight: bold;">Predicting Major League Baseball Player Performance</h1>
+      <h2 style="color:#D50032; font-family: verdana; -webkit-text-stroke: 1.5px white; font-size: 26px; font-weight: bold;">How does injury affect player performance?</h2>
+  </div>  
+      <!-- Add Section for Project Overview -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4"> 
+          <h2 style="color:#D50032; text-align: left;">Project Introduction</h2>
+            <p style="color:white; font-size: 16px; text-align: left"> With 162 games in the regular Major League Baseball season and over 900 active players in the league, there are
+              bound to be many injuries throughout 6 months of game play. Even the best of players will miss a few games
+              to small injuries. Injuries ranging from small strains to UCL (Ulnar Collateral Ligament) tears and concussions that may take a player out for 
+              5 games or for the rest of the season. However, if a player does come back to play in more games that season, how
+              productive are they?<p>
+                <p style="color:white; font-size: 16px; text-align: left"> To answer this question, a historical dataset of WAR (Wins Against Replacement) and historical injury data for all players for the
+                  2010 through 2021 seasons is used in a machine learning model.<p>
+              </div>          
+        <div class="col-md-6">
+          <h2 style="color:#D50032; text-align: left; margin-left: 50px;">Player Injuries</h2>
+            <iframe width="560" height="320" align-content="right" src="https://www.youtube.com/embed/zcog4aiKIjc" title="YouTube video player" frameborder="0" allow="accelerometer; 
+            autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+    </div>
+  </div>
+  <!-- Add 2nd Section -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4"> 
+        <h5 style="text-align: left; margin-top: 25px;">Resources</h5>
+        <p style="text-align: left; font-size: 16px;"><a href="https://www.baseball-reference.com/about/war_explained.shtml" target="_blank" style="color: white;">Historical WAR Data</a><p>
+        <p style="text-align: left; font-size: 16px;"><a href="https://www.prosportstransactions.com/baseball/Search/SearchResults.php?Player=&Team=&BeginDate=2010-03-30&EndDate=2021-09-30&DLChkBx=yes&submit=Search&start=0" target="_blank" style="color: white">Historical Injury Data</a></p>
+        <h4>Project Team</h4>
+        <p style="color:white; font-size: 16px; text-align: flex"><a href="https://www.linkedin.com/in/michael-binger/" target="_blank" style="color: white">Michael Binger</a></p>
+        <p style="color:white; font-size: 16px; text-align: flex"><a href="https://www.linkedin.com/in/brett-liddicoat-79a1271ba/" target="_blank" style="color: white">Brett Liddicoat</a></p>
+        <p style="color:white; font-size: 16px; text-align: flex"><a href="https://www.linkedin.com/in/carolinestyc/" target="_blank" style="color: white">Caroline Styc</a></p>
+        <p style="color:white; font-size: 16px; text-align: flex"><a href="https://www.linkedin.com/in/brian-wheatley-545413228/" target="_blank" style="color: white">Brian Wheatley</a></p>
+      </div>
+      <div class="col-md-8"> 
+        <h2 style="color:#D50032; text-align: left; margin-left: 45px;">The Data</h2>
+          <p style="color:white; font-size: 16px; text-align: left; margin-left: 45px;"> Our primary sources of data were Baseball-Reference and aggregated WAR data from FanGraphs and Baseball-Reference, compiled by Neil Paine.
+              Both sources were chosen by the completeness of data, both in terms of years and players available, as well as accuracy with limited missing data.
+              Our data sources were fairly consistent between both sources; however, we did focus on aligning player information using player name, team, and year. Through the process, we did experience a small loss of data, around 1.5%, however our group determined that was an acceptable loss, since our data included over 18,000 data rows.
+              Our team limited our data range to 2010, or 14 years. We felt that there was a possibility of skewed data prior to that time, due to the ongoing steroid scandals of the 1990s and early 2000s. There's also ongoing controversy with WAR numbers favoring players in earlier years due to the variance in skill levels. Injury data before the 1990s is also far from complete.<p>
+        </div>               
+    </div>
+  </div>
+<!-- Add 3rd Section -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6"> 
+        <h2 style="color:#D50032; text-align: left">Machine learning</h2>
+          <p style="color:white; font-size: 16px; text-align: left"> Our primary sources of data were Baseball-Reference and aggregated WAR data from FanGraphs and Baseball-Reference, compiled by Neil Paine.
+            Both sources were chosen by the completeness of data, both in terms of years and players available, as well as accuracy with limited missing data.
+            Our data sources were fairly consistent between both sources; however, we did focus on aligning player information using player name, team, and year. Through the process, we did experience a small loss of data, around 1.5%, however our group determined that was an acceptable loss, since our data included over 18,000 data rows.
+            Our team limited our data range to 2010, or 14 years. We felt that there was a possibility of skewed data prior to that time, due to the ongoing steroid scandals of the 1990s and early 2000s. There's also ongoing controversy with WAR numbers favoring players in earlier years due to the variance in skill levels. Injury data before the 1990s is also far from complete.<p>
+      </div>
+      <div class="col-md-6"> 
+        <h2 style="color:#D50032; text-align: cleft">Results</h2>
+          <p style="color:white; font-size: 16px; text-align: left"> Our primary sources of data were Baseball-Reference and aggregated WAR data from FanGraphs and Baseball-Reference, compiled by Neil Paine.
+              Both sources were chosen by the completeness of data, both in terms of years and players available, as well as accuracy with limited missing data.
+              Our data sources were fairly consistent between both sources; however, we did focus on aligning player information using player name, team, and year. Through the process, we did experience a small loss of data, around 1.5%, however our group determined that was an acceptable loss, since our data included over 18,000 data rows.
+              Our team limited our data range to 2010, or 14 years. We felt that there was a possibility of skewed data prior to that time, due to the ongoing steroid scandals of the 1990s and early 2000s. There's also ongoing controversy with WAR numbers favoring players in earlier years due to the variance in skill levels. Injury data before the 1990s is also far from complete.<p>
+        </div>               
+    </div>
+  </div>
+<!--Add Section for Results Tableau Graph-->
+  <div class="row">
+    <h6 style="color:#D50032; text-align: center">Visualizing the Overall Findings</h6>
+      <h3><a class="btn btn-primary btn-lg" href="https://github.com/brianrwheatley/final-baseball-war-stats/tree/main" role="button" target="_blank">Click Here for Player & Team Findings</a></h3>
+    <iframe src="https://public.tableau.com/views/LeagueMLBInjuryandWARTrends/LeagueYearInjuryTrends?:language=en-US&:display_count=n&:origin=viz_share_link:showVizHome=no&:embed=true" width="610" height="690" ></iframe>
+    <iframe src="https://public.tableau.com/views/InjuryVSNon-InjuryWARComparison/InjuryVSNon-InjuryWARComparison?:language=en-US&:display_count=n&:origin=viz_share_link:showVizHome=no&:embed=true" width="610" height="690" ></iframe>
+  </div> 
+    <!-- <div class='tableauPlaceholder col-md-6' id='viz1654125568225' style='width: 1000'>
+      <noscript><a href='#'><img alt='Injury VS Non-Injury WAR Comparison ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;In&#47;InjuryVSNon-InjuryWARComparison&#47;InjuryVSNon-InjuryWARComparison&#47;1_rss.png' style='border: none' /></a>
+      </noscript><object class='tableauViz'  style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+        <param name='embed_code_version' value='3' /> 
+        <param name='site_root' value='' />
+        <param name='name' value='InjuryVSNon-InjuryWARComparison&#47;InjuryVSNon-InjuryWARComparison' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;In&#47;InjuryVSNon-InjuryWARComparison&#47;InjuryVSNon-InjuryWARComparison&#47;1.png' /> 
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+      </object>
+    </div>
+    <div class='tableauPlaceholder col-md-6' id='viz1654125994736' style='width: 1000'>
+      <noscript><a href='#'><img alt='League Year Injury Trends ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Le&#47;LeagueMLBInjuryandWARTrends&#47;LeagueYearInjuryTrends&#47;1_rss.png' style='border: none' /></a>
+      </noscript><object class='tableauViz'  style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+        <param name='embed_code_version' value='3' /> 
+        <param name='site_root' value='' />
+        <param name='name' value='LeagueMLBInjuryandWARTrends&#47;LeagueYearInjuryTrends' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Le&#47;LeagueMLBInjuryandWARTrends&#47;LeagueYearInjuryTrends&#47;1.png' /> 
+        <param name='animate_transition' value='yes' />              
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+      </object>
+    </div>
+    </div>
+  </div> -->
+  <!-- <script type='text/javascript'>                    
+      var divElement = document.getElementById('viz1654125568225');                    
+      var vizElement = divElement.getElementsByTagName('object')[0];                    
+          // if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';
+          //     vizElement.style.maxWidth='650px';
+          //     vizElement.style.width='100%';
+          //     vizElement.style.minHeight='587px';
+          //     vizElement.style.maxHeight='887px';
+          //     vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+          // } 
+          // else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';
+          //     vizElement.style.maxWidth='650px';
+          //     vizElement.style.width='100%';
+          //     vizElement.style.minHeight='587px';
+          //     vizElement.style.maxHeight='887px';
+          //     vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+          // } else { vizElement.style.width='100%';vizElement.style.height='727px';
+          // }                    
+          var scriptElement = document.createElement('script');                    
+          scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+  <script type='text/javascript'>                    
+      var divElement = document.getElementById('viz1654125994736');                    
+      var vizElement = divElement.getElementsByTagName('object')[0];                    
+          // if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';
+          //     vizElement.style.maxWidth='650px';
+          //     vizElement.style.width='100%';
+          //     vizElement.style.minHeight='587px';
+          //     vizElement.style.maxHeight='887px';
+          //     vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+          // } 
+          // else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';
+          //     vizElement.style.maxWidth='650px';
+          //     vizElement.style.width='100%';
+          //     vizElement.style.minHeight='587px';
+          //     vizElement.style.maxHeight='887px';
+          //     vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+          // } 
+          // else { vizElement.style.width='100%';vizElement.style.height='877px';
+          // }                     
+          var scriptElement = document.createElement('script');                    
+          scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);</script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+
+</body>
+
+</html>
