@@ -30,10 +30,10 @@ Our team limited our data range to begin in 2010, or 12 years. We felt that ther
 Originally, we planned to host our data as PostgreSQL on AWS.  However, looking at our compiled data, we determined dropping our CSV files into an AWS S3 bucket was the better solution, both in terms of access and cost.
 
 ## Questions Overview
--Can we predict a player's WAR number following an injury?
--Could we accurately predict a player's recovery time based on injury?
--Is there a direct correlation between time on the injured list and decrease in WAR?
--Does WAR ever bounce back to pre-injury levels and how quickly?
+- Can we predict a player's WAR number following an injury?
+- Could we accurately predict a player's recovery time based on injury?
+- Is there a direct correlation between time on the injured list and decrease in WAR?
+- Does WAR ever bounce back to pre-injury levels and how quickly?
 
 ## Results
 We created a sample machine learning model using very small portions of the data, to ensure we prepared a model that would be capable of interpreting the data we intend to input.
