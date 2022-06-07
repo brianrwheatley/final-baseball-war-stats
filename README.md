@@ -38,9 +38,9 @@ We created a sample machine learning model using very small portions of the data
 
 Once we cleaned and organized our data, we put aside our initial plan to run a linear regression model on our data. The classification wasn’t what we were after.
 
-We settled on running our data through a neural network.  Our model featured four to five hidden layers, using both the Relu and Sigmoid activations. Our model was then compiled using the Adam optimizer.
-We ran our data through two models – one for players with above average WAR, the other for WAR change from season to season.
-Through training with 100 epochs, we were able to attain a prediction accuracy of 84-86% for both models.
+We settled on running our data through a neural network.  The model was used to create a prediction classification - if a player was above 2 WAR (everyday player) and WAR regression or progression from year-to-year. The results of the analysis show that an injured player showed a quicker decline in abilities (WAR) by age compared to non-injured players. For non-injured players, regression occurred after age 30. In contrast, injured players showed regression after age 24. This six-year difference shows that injuries cause a decline in player ability and value for a team, even in younger players.
+
+Our model featured four to five hidden layers, using both the Relu and Sigmoid activations. Our model was then compiled using the Adam optimizer. We ran our data through two models – one for players with above average WAR, the other for WAR change from season to season. Through training with 100 epochs, we were able to attain a prediction accuracy of 84-86% for both models.
 
 ## Future Analysis Possibilities
 Our analysis is limited to overall player injuries. We have discussed that future analysis could breakdown the injury data more – to include location of injury, type of injury, or recurring injury.  For example, a torn rotator cuff may be more detrimental to the WAR number for a pitcher, while knee injuries may be more impactful to a batter’s WAR.
