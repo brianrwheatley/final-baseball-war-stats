@@ -23,7 +23,7 @@ Each week, we reviewed progress, then divided tasks among ourselves to finish ov
 
 
 ## Looking at the Data
-Our primary sources of data were Baseball-Reference and aggregated WAR data from FanGraphs and Baseball-Reference, compiled by Neil Paine.
+Our primary sources of data were Baseball-Reference and aggregated WAR data from FanGraphs and Baseball-Reference, compiled by [Neil Paine](https://github.com/NeilPaine538/MLB-WAR-data-historical). Our injury data was scraped from Pro Sports Transactions.
 
 Both sources were chosen by the completeness of data, both in terms of years and players available, as well as accuracy with limited missing data.
 
