@@ -1,5 +1,9 @@
 # Predicting Major League Baseball Player Performance
 ### Using player WAR information and injury data to anticipate performance growth or contraction
+https://carolinestyc.github.io/Baseball-WAR-Webpage/ · https://mdbinger.github.io/MLB_player_page/
+
+## Project Members
+[Brett Liddicoat](https://github.com/bmliddicoat) · [Michael Binger](https://github.com/mdbinger) · [Caroline Styc](https://github.com/carolinestyc) · [Brian Wheatley](https://github.com/brianrwheatley/)
 
 WAR (Wins Above Replacement) is an attempt to summarize a player's total contributions to their team into one statistical number. Using varying mathematical formats, a WAR number asks the question - "If a player was injured and the team needed a replacement, how much value would the team be losing (or gaining)?)" 
 
