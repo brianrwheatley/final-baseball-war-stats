@@ -46,6 +46,8 @@ We settled on running our data through a neural network.  The model was used to 
 
 Our model featured four to five hidden layers, using both the Relu and Sigmoid activations. Our model was then compiled using the Adam optimizer. We ran our data through two models – one for players with above average WAR, the other for WAR change from season to season. Through training with 100 epochs, we were able to attain a prediction accuracy of 84-86% for both models.
 
+[Tableau Data Visualizations](https://public.tableau.com/app/profile/brett.liddicoat)
+
 ## Future Analysis Possibilities
 Our analysis is limited to overall player injuries. We have discussed that future analysis could breakdown the injury data more – to include location of injury, type of injury, or recurring injury.  For example, a torn rotator cuff may be more detrimental to the WAR number for a pitcher, while knee injuries may be more impactful to a batter’s WAR.
 
