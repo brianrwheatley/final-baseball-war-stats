@@ -30,8 +30,6 @@ Our team limited our data range to begin in 2010, or 12 years. We felt that ther
 Originally, we planned to host our data as PostgreSQL on AWS.  However, looking at our compiled data, we determined dropping our CSV files into an AWS S3 bucket was the better solution, both in terms of access and cost.
 
 ## Questions Overview
-- Can we predict a player's WAR number following an injury?
-- Could we accurately predict a player's recovery time based on injury?
 - Is there a direct correlation between time on the injured list and decrease in WAR?
 - Does WAR ever bounce back to pre-injury levels and how quickly?
 
@@ -49,4 +47,6 @@ Our analysis is limited to overall player injuries. We have discussed that futur
 
 By categorizing injuries and different player positions, we could possibly observe if there are specific injuries we’d expect to impact players in a consistent way.
 
-Our modeling doesn’t fully consider a player’s team or the player’s salary when predicting WAR recovery. Further analysis may show correlation between how well a team is funded and recovery time after injury. 
+Using our neural model, we could also further build on the analysis to predict a player's recovery time based on the type of injury, as well possibly predicting a player's WAR number following the injury.
+
+Our modeling doesn’t fully consider a player’s team or the player’s salary when predicting WAR recovery. Further analysis may show correlation between how well a team is funded and recovery time after injury.
