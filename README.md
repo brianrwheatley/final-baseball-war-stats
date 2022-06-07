@@ -1,7 +1,7 @@
 # Predicting Major League Baseball Player Performance
 ### Using player WAR information and injury data to anticipate performance growth or contraction
 
-WAR (Wins Above Replacement) is an attempt to summarize a player's total contributions to their team into one statistical number. Using varying mathematical formats, a WAR number asks the question - "If a player was injured at the team needed a replacement, how much value would the team be losing (or gaining)?)" 
+WAR (Wins Above Replacement) is an attempt to summarize a player's total contributions to their team into one statistical number. Using varying mathematical formats, a WAR number asks the question - "If a player was injured and the team needed a replacement, how much value would the team be losing (or gaining)?)" 
 
 A standard WAR hovers around a +2, meaning that if a player with a higher number was injured, a team would be losing experience by bringing up a replacement.  Theoretically, anything below 2 or a negative number would be a gain in performance for a team.
 
