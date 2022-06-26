@@ -4,10 +4,8 @@
 } */
 
 body {
-    background-color: rgba(0, 0, 0, 0.373);
-    background-repeat: no-repeat, repeat;
-    background-image: url("images/mlb4.png"), url("images/mlb4.png");
-    background-blend-mode: saturation;
+    background-color: #002D72;
+    color: white;
 }
 
 .jumbotron {
@@ -26,30 +24,29 @@ body {
     color: white;
 }
 
-#viz1653859550251 {
-    border-style: solid;
-    border-color: black;
-  }
-
-#viz1653862021139 {
-    border-style: solid;
-    border-color: black;
+#viz1653859550251 p {
+    margin:0px 20px;
+    display:-moz-inline-stack;
+    color:white;
 }
 
 #viz1653852802422 {
-    border-style: solid;
-    border-color: black;
+    margin:0px 20px;
+    display:-moz-inline-stack;
+    color:white;
 }
 
 #viz1653862606719 {
-    border-style: solid;
-    border-color: black;
+    margin:0px 20px;
+    display:-moz-inline-stack;
+    color:white;
 }
 
 .new_container {
     display: flex
 }
 
-.new_row_container { 
-    display: flex
-}
+iframe {
+    padding: 8px;
+    background: #D50032;
+  }
